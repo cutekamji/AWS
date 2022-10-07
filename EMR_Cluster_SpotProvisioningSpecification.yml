@@ -1,0 +1,10 @@
+# AWS::EMR::Cluster SpotProvisioningSpecification
+# https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-spotprovisioningspecification.html
+# 스팟인스턴스, spotinstnace
+
+InstanceFleetProvisioningSpecifications:
+  SpotProvisioningSpecification:
+    AllocationStrategy: String # (선택) capacity-optimized
+    BlockDurationMinutes: Integer # (선택) 스팟 인스턴스 실행 기간
+    TimeoutAction: String
+    TimeoutDurationMinutes: Integer # (필수) 프로비저닝 허용 시간
